@@ -1,0 +1,161 @@
+.container {
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.smallcontainer {
+  height: 100vh;
+  width: 100%;
+}
+
+.heading {
+  color: #fff;
+  padding-top: 4rem;
+  text-align: center;
+}
+
+.heading > h2 {
+  margin: 0;
+  background-color: #2e2828;
+}
+
+.carduser {
+  width: 100%;
+  display: flex;
+  height: 85.7vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.carduser > .swiper {
+  width: 80%;
+  background-color: rgb(252, 255, 255);
+}
+
+.carduser > .swiper-slide {
+  display: flex;
+  overflow: hidden;
+}
+
+.swiper-slide-next {
+  background-color: rgb(103, 5, 133);
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+  font-family: swiper-icons;
+  /* font-size: var(--swiper-navigation-size); */
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: none!important;
+  letter-spacing: 0;
+  /* font-feature-settings: ; */
+  font-variant: initial;
+  line-height: 1;
+}
+
+.card {
+  height: 50vh;
+  width: 13rem;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #fff;
+  transition: all 1s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  background-color: whitesmoke;
+}
+
+.imgGroup {
+  height: 18vh;
+  width: 13rem;
+}
+
+.imgGroup > img {
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  margin: 20px 0;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.btn {
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  user-select: none;
+  padding: 7px 75px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 250ms;
+  text-transform: uppercase;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  background-color: #2e2828;
+  box-shadow: rgba(44, 187, 99, 0.2) 0 -25px 18px -14px inset,
+    rgba(44, 187, 99, 0.15) 0 1px 2px, rgba(44, 187, 99, 0.15) 0 2px 4px,
+    rgba(44, 187, 99, 0.15) 0 4px 8px, rgba(44, 187, 99, 0.15) 0 8px 16px,
+    rgba(44, 187, 99, 0.15) 0 16px 32px;
+  font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+}
+
+.btn:hover {
+  transform: scale(1.05) rotate(-1deg);
+  box-shadow: rgba(44, 187, 99, 0.35) 0 -25px 18px -14px inset,
+    rgba(44, 187, 99, 0.25) 0 1px 2px, rgba(44, 187, 99, 0.25) 0 2px 4px,
+    rgba(44, 187, 99, 0.25) 0 4px 8px, rgba(44, 187, 99, 0.25) 0 8px 16px,
+    rgba(44, 187, 99, 0.25) 0 16px 32px;
+}
+
+
+@media only screen and (max-width: 865px) {
+  .carduser, .swiper {
+    margin-top: -10px;
+ }
+
+ .card {
+  height: 64vh;
+  width: 13rem;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #fff;
+  transition: all 1s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+}
+
+
+
+@media only screen and (max-width: 500px) {
+
+  .card {
+    height: 65vh;
+    width: 13rem;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #fff;
+    transition: all 1s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  }
+
+  .swiper-button-next, .swiper-button-prev {
+   display: none;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+  display: none;
+}
+
+.carduser, .swiper {
+   margin-top: -10px;
+}
+
+}

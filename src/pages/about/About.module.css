@@ -1,0 +1,312 @@
+.container {
+  z-index: -9;
+  flex-wrap: wrap;
+  position: relative;
+  box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.smallcontainer {
+  width: 100%;
+  height: 100vh;
+  padding-top: rem;
+}
+
+.heading {
+  color: #fff;
+  padding-top: 4rem;
+  text-align: center;
+}
+
+.heading > h2 {
+  margin: 0;
+  background-color: #2e2828;
+}
+
+.userdata {
+  display: flex;
+  height: 85.7vh;
+  padding: 0 5rem;
+}
+
+.img {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blankcontent {
+  z-index: -1;
+  right: 60px;
+  width: 15rem;
+  bottom: 50px;
+  height: 15rem;
+  position: relative;
+  background-color: #2e2828;
+}
+
+.img > img {
+  top: 50px;
+  left: 60px;
+  width: 15rem;
+  height: 15rem;
+  position: relative;
+  border: 1px solid #2e2828;
+}
+
+.userdetails {
+  width: 50%;
+  display: flex;
+  padding: 5rem 0;
+  color: #2e2828;
+  margin-left: 5rem;
+  align-items: center;
+  flex-direction: column;
+}
+
+.buttonGroups{
+  width: 100%;
+}
+
+.aboutbutton{
+   padding: 10px;
+   margin-right: 20px;
+   border-radius: 15px;
+   text-transform: uppercase;
+
+}
+
+.aboutbutton:hover{
+  cursor: pointer;
+  color: red;
+  background-color: #362626;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+}
+
+/* .buttonGroups> a> .button28 {
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #3B3B3B;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 100px;
+  line-height: normal;
+  margin: 0 20px;
+  min-width: 0;
+  outline: none;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  text-transform: capitalize;
+  will-change: transform;
+}
+
+.buttonGroups>a> .button28:disabled {
+  pointer-events: none;
+}
+
+.buttonGroups>a> .button28:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.buttonGroups>a> .button28:active {
+  box-shadow: none;
+  transform: translateY(0);
+}  */
+
+
+
+@media only screen and (max-width: 865px) {
+  
+  .blankcontent {
+    z-index: -1;
+    right: 2.5rem;
+    width: 10rem;
+    bottom: 3rem;
+    height: 10rem;
+    position: relative;
+    background-color: #2e2828;
+  }
+
+  .img > img {
+    top: 1rem;
+    left: 3rem;
+    width: 10rem;
+    height: 10rem;
+    position: relative;
+    border: 1px solid #2e2828;
+  }
+
+  .userdetails {
+    width: 100%;
+    display: flex;
+    color: #2e2828;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 8rem;
+    height: 0vh;
+    margin-left: 0rem;
+    padding: 0rem 0;
+    /* border: 1px solid red; */
+  }
+
+  /* .userdetails>p{
+    margin: 10px 0;
+  } */
+
+  .header{
+    margin-top: 5rem;
+  }
+
+  .buttonGroups{
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    margin-top: 5px;
+  }
+
+}
+
+
+
+@media only screen and (max-width: 665px) {
+
+  .blankcontent {
+    z-index: -1;
+    right: 2.5rem;
+    width: 8rem;
+    bottom: 2rem;
+    height: 8rem;
+    position: relative;
+    background-color: #2e2828;
+  }
+
+  .img > img {
+    top: 1rem;
+    left: 2rem;
+    width: 8rem;
+    height: 8rem;
+    position: relative;
+    border: 1px solid #2e2828;
+  }
+
+  .userdetails {
+    width: 100%;
+    display: flex;
+    color: #2e2828;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 8rem;
+    height: 0vh;
+    margin-left: 0rem;
+    padding: 2rem 0;
+    /* border: 1px solid red; */
+  }
+
+  .header{
+    margin-top: 15px;
+  }
+  
+  .userdetails>p{
+    margin: 5px 0;
+
+  }
+
+  .buttonGroups{
+    width: 100%;
+    height: 10rem;
+    display: flex;
+  
+  }
+
+  .button28{
+    padding: 5px 5px;
+  }
+
+}
+
+
+@media only screen and (max-width: 500px) {
+
+  .userdata{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+  .userdata {
+    display: flex;
+    width: 100%;
+    /* height: 85.7vh; */
+    padding: 0 0rem;
+    /* margin: auto; */
+  }
+  
+  .img {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .blankcontent {
+    z-index: -1;
+    right: 14px;
+    width: 6rem;
+    bottom: 5px;
+    height: 6rem;
+    position: relative;
+    background-color: #2e2828;
+  }
+
+  .img > img {
+    top: 40px;
+    left: 40px;
+    width: 6rem;
+    height: 6rem;
+    position: relative;
+    border: 1px solid #2e2828;
+  }
+   
+
+  .userdetails {
+    width: 100%;
+    display: flex;
+    color: #2e2828;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 8rem;
+    height: 0vh;
+    margin-left: 0rem;
+    padding: 0rem 0;
+    /* border: 1px solid red; */
+  }
+
+  .userdetails>p{
+    margin: 0;
+  }
+
+  .buttonGroups{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
