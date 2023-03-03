@@ -57,7 +57,7 @@ const Home = () => {
                   <button className={style1.btn}>See Cv</button>
                 </a>
                 <a
-                  href="https://www.canva.com/design/DAFVrFvYy0M/UdR4StdU7c-gOWrD1eHfoQ/view?utm_content=DAFVrFvYy0M&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
+                  href="https://www.canva.com/design/DAFVrFvYy0M/pmxV5G2lttiNQB-zrq13yg/edit?utm_content=DAFVrFvYy0M&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
                   target="_blank"
                 >
                   <button className={style1.btn}>Download Cv</button>
