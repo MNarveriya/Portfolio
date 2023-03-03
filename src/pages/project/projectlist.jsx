@@ -15,7 +15,7 @@ export const projectData = [
     {
         title: "Google form",
         description: "this is a simple google form clone it just learn to how do work and it is used only html and css",
-        btn1 :  <a href="https://google-form-mukul.netlify.app/" target="_blank"> <button className={project.btn} role="button">Demo</button></a>,
+        btn1 :  <a href="https://mnarveriya.github.io/goole-form/" target="_blank"> <button className={project.btn} role="button">Demo</button></a>,
         btn2 :  <a href="https://github.com/MNarveriya/goole-form.git" target="_blank"> <button className={project.btn} role="button">source code</button></a>
     }
 ]
