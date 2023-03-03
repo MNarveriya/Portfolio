@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+
 import service from "../service/Service.module.css";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -30,8 +30,11 @@ const Service = () => {
                 866: {
                   slidesPerView: 2,
                 },
+                601: {
+                  slidesPerView: 1
+                },
                 501: {
-                  slidesPerView: 2
+                  slidesPerView: 1
                 },
                 0: {
                   slidesPerView: 1

@@ -9,9 +9,9 @@
   height: 50px;
   width: 100%;
   color: #fff;
-  position: fixed; 
+  position: fixed;
   top: 0;
-  left: 0; 
+  left: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -19,16 +19,16 @@
   transition: 1s ease-in-out;
 }
 
-.navbar1{
+.navbar1 {
   /* background-color: #fff; */
   /* box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; */
   height: 50px;
   width: 100%;
   color: var(--navBg);
-  position: fixed; 
+  position: fixed;
   top: 0;
-  left: 0; 
-  display: flex; 
+  left: 0;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 9;
@@ -37,33 +37,28 @@
   /* display: inline-block; */
 }
 
-.navbar1>.menu-bars {
+.navbar1 > .menu-bars {
   margin-left: 5rem;
   font-size: 1rem;
   background: none;
   color: red;
-  
 }
 
+.navbar1 > .logo1 {
+  margin-right: 5rem;
+  color: red;
+}
 
-.navbar1 > .logo1{
- margin-right: 5rem;
- color: red;
-} 
-
-.navbarcolorChange>.menu-bars {
+.navbarcolorChange > .menu-bars {
   margin-left: 5rem;
   font-size: 1rem;
   background: none;
   color: #fff;
 }
 
-
-.navbarcolorChange > .logo1{
- margin-right: 5rem;
+.navbarcolorChange > .logo1 {
+  margin-right: 5rem;
 }
-
-
 
 .menu-cross {
   margin-left: 10rem;
@@ -71,24 +66,24 @@
   color: #fff;
 }
 
-.crossicon{
+.crossicon {
   font-size: 1.5rem;
 }
 
-.logo{
+.logo {
   width: 1.5rem;
   height: 1.5rem;
   margin-left: 1rem;
   margin-top: 0.1rem;
   border-radius: 50%;
-text-transform: capitalize;
+  text-transform: capitalize;
 }
 
-.logo1{
-   width: 2rem;
-   height: 2rem;
-   color: black;
-   border-radius: 50%;
+.logo1 {
+  width: 2rem;
+  height: 2rem;
+  color: black;
+  border-radius: 50%;
 }
 
 .nav-menu {
@@ -101,7 +96,7 @@ text-transform: capitalize;
   top: 0;
   left: -100%;
   transition: 850ms;
-   z-index: 10;
+  z-index: 10;
 }
 
 .nav-menu.active {
@@ -154,35 +149,48 @@ span {
   margin-left: 16px;
 }
 
-
-@media only screen and (max-width: 500px) {
-
+@media only screen and (max-width: 600px) {
   .menu-bars {
-    margin-left: 20px;
     background: none;
+    margin-left: 20px;
   }
 
-  .navbar1>.menu-bars {
-    margin-left: 3rem;
-   
-    
+  .navbar1 {
+    height: 60px;
   }
-  
-  
-  .navbar1 > .logo1{
-   margin-right: 3rem;
-   
-  } 
-  
 
-  .navbarcolorChange>.menu-bars {
+  .navbar1 > .menu-bars {
+    display: flex;
+    font-size: 2rem;
     margin-left: 3rem;
-    
+    align-items: center;
   }
-  
-  
-  .navbarcolorChange > .logo1{
-   margin-right: 3rem;
+
+  .navbar1 > .logo1 {
+    width: 2.5rem;
+    display: flex;
+    height: 2.5rem;
+    margin-right: 3rem;
+    align-items: center;
+  }
+
+  .navbarcolorChange {
+    height: 60px;
+  }
+
+  .navbarcolorChange > .menu-bars {
+    display: flex;
+    font-size: 2rem;
+    margin-left: 3rem;
+    align-items: center;
+  }
+
+  .navbarcolorChange > .logo1 {
+    width: 2.5rem;
+    display: flex;
+    height: 2.5rem;
+    margin-right: 3rem;
+    align-items: center;
   }
 
   .nav-menu {
@@ -193,14 +201,37 @@ span {
   }
 
   .navbar-toggle {
+    margin: 3rem 0;
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    margin: 4rem 0;
     background-color: black;
+    justify-content: space-around;
   }
-  
 
+  .nav-text a {
+    height: 30px;
+    display: flex;
+    font-size: 30px;
+    list-style: none;
+    padding: 40px 16px;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav-text {
+    height: 30px;
+    display: flex;
+    list-style: none;
+    padding: 40px 16px;
+    align-items: center;
+    justify-content: start;
+  }
 
-  
+  .crossicon {
+    font-size: 2.5rem;
+  }
+
+  .logo {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
 }

@@ -5,8 +5,8 @@
 }
 
 .smallcontainer {
-  height: 100vh;
   width: 100%;
+  height: 100vh;
 }
 
 .heading {
@@ -42,16 +42,16 @@
   background-color: rgb(103, 5, 133);
 }
 
-.swiper-button-next:after, .swiper-button-prev:after {
+.swiper-button-next:after,
+.swiper-button-prev:after {
   font-family: swiper-icons;
-  /* font-size: var(--swiper-navigation-size); */
+
+  line-height: 1;
+  letter-spacing: 0;
   font-size: 1.5rem;
   font-weight: bold;
-  text-transform: none!important;
-  letter-spacing: 0;
-  /* font-feature-settings: ; */
   font-variant: initial;
-  line-height: 1;
+  text-transform: none !important;
 }
 
 .card {
@@ -115,47 +115,73 @@
     rgba(44, 187, 99, 0.25) 0 16px 32px;
 }
 
-
 @media only screen and (max-width: 865px) {
-  .carduser, .swiper {
-    margin-top: -10px;
- }
-
- .card {
-  height: 64vh;
-  width: 13rem;
-  margin: 0 auto;
-  text-align: center;
-  background-color: #fff;
-  transition: all 1s ease-in-out;
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-}
-}
-
-
-
-@media only screen and (max-width: 500px) {
-
   .card {
-    height: 65vh;
+    height: auto;
     width: 13rem;
     margin: 0 auto;
     text-align: center;
     background-color: #fff;
     transition: all 1s ease-in-out;
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+      rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .smallcontainer {
+    height: auto;
   }
 
-  .swiper-button-next, .swiper-button-prev {
-   display: none;
+  .card {
+    padding: 5px 0;
+    font-size: 15px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #fff;
+    transition: all 1s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+      rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  }
+
+  .carddetails {
+    margin: 50px 0;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+
+  .heading > h2 {
+    font-size: 2.5rem;
+  }
+
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    display: none;
+  }
+
+  .carduser,
+  .swiper,
+  .carduser,
+  .card {
+    height: auto;
+  }
+
+  .carduser {
+    margin-top: 90px;
+    padding-bottom: 100px;
+  }
 }
 
-.swiper-button-next:after, .swiper-button-prev:after {
-  display: none;
+@media only screen and (max-width: 495px) {
+  .card {
+    font-size: 15px;
+  }
 }
-
-.carduser, .swiper {
-   margin-top: -10px;
-}
-
+@media only screen and (max-width: 340px) {
+  .card {
+    font-size: 15px;
+  }
 }

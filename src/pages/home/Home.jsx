@@ -31,7 +31,7 @@ const Home = () => {
             <a href="" target="_blank">
               <BsTwitter />
             </a>
-            <a href="" target="_blank">
+            <a href="https://github.com/MNarveriya" target="_blank">
               <AiFillGithub />
             </a>
           </div>
@@ -51,13 +51,13 @@ const Home = () => {
 
               <div className={style1.btngroup}>
                 <a
-                  href="https://www.linkedin.com/in/mukul-narveriya-989949161/"
+                  href="https://www.canva.com/design/DAFVrFvYy0M/UdR4StdU7c-gOWrD1eHfoQ/view?utm_content=DAFVrFvYy0M&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
                   target="_blank"
                 >
                   <button className={style1.btn}>See Cv</button>
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/mukul-narveriya-989949161/"
+                  href="https://www.canva.com/design/DAFVrFvYy0M/UdR4StdU7c-gOWrD1eHfoQ/view?utm_content=DAFVrFvYy0M&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
                   target="_blank"
                 >
                   <button className={style1.btn}>Download Cv</button>

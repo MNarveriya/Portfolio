@@ -120,6 +120,7 @@ textarea {
 
 input[type="text"]:focus,
 [type="email"]:focus,
+[type="number"]:focus,
 textarea:focus {
   outline: none;
   padding: 0 0 0.875em 0;
@@ -338,13 +339,17 @@ textarea {
 
 
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
+   
+  .smalcontainer{
+    height: auto;
+  } 
+ 
 
   .data {
     width: 100%;
     display: flex;
-    height: 85.7vh;
-    /* margin: 0 auto; */
+    height: auto;
     align-items: center;
     flex-direction: column;
     justify-content: center;
@@ -358,29 +363,37 @@ textarea {
   }
 
   .contactme {
-    width: 80%;
+    width: 90%;
+    height: auto;
     display: flex;
-    height: 10vh;
+    font-size: 10px;
+    margin: 80px 0px;
     align-items: center;
     flex-direction: column;
     justify-content: center;
   }
 
-  
+  .heading>h2{
+    font-size: 2.5rem;
+  }
 
-  h3 {
-    display: none;
+  .contactme> h3 {
+    font-size: 25px;
+    display: inline-block;
   }
   
   .underline {
-    /* width: 50px;
-    margin-bottom: 10px;
-    border-bottom: solid 2px #474544; */
-    display: none;
+    display: inline-block;
+  }
+
+  .icon_wrapper{
+    display: inline-block;
   }
 
   .icon{
-    display: none;
+    height: 12vw;
+    display: inline-block;
+    
   }
 
   .map {
@@ -389,7 +402,7 @@ textarea {
 
 form {
   padding: 20px;
-  margin: 20px 0;
+  font-size: 23px;
   background-color: rgb(180, 176, 176);
 }
 
@@ -416,4 +429,10 @@ input[type="text"], [type="email"], [type="number"], textarea {
   border-bottom: solid 2px #474544;
 }
 
+input[type="submit"]{
+  font-size: 15px;
 }
+
+}
+
+

@@ -10,7 +10,7 @@ const Footer = () => {
     <>
       <div className={footer.container}>
         <div className={footer.details}>
-        <p>designed and devloped by</p>
+          <p>designed and devloped by</p>
           <div className={footer.socialicon}>
             <a
               href="https://www.linkedin.com/in/mukul-narveriya-989949161/"
@@ -25,11 +25,15 @@ const Footer = () => {
             <a href="" target="_blank" style={{ color: "#fff" }}>
               <BsTwitter />
             </a>
-            <a href="" target="_blank" style={{ color: "#fff" }}>
+            <a
+              href="https://github.com/MNarveriya"
+              target="_blank"
+              style={{ color: "#fff" }}
+            >
               <AiFillGithub />
             </a>
           </div>
-          
+
           <span>@copyright 2023</span>
         </div>
       </div>
